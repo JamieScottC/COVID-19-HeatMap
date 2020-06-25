@@ -16,13 +16,15 @@ html, body{
 	top: 50%;
 	transform: translateY(-50%);
 	padding: 10px;
-	display: grid;
-	grid-template-columns: repeat(10, 3fr);
+	/*display: grid;
+	grid-template-columns: repeat(10, 3fr);*/
 }
 .container div {
 	border: 1px solid black;
 	background-color: #357d4e;
 	text-align: center;
+	width: 9.62%;
+	height: 19.7%;
 	display: inline-block;
 }
 .container span{
@@ -32,55 +34,56 @@ html, body{
   	font-weight: 500;
   	color: white;
   	text-transform: uppercase;
-  	margin-top: 68px;
+  	margin-top: 20%;
 }
-#Alabama{
+#AL{
+	
 }
-#Alaska{
+#AK{
 }
-#Arizona{}
-#California{}
-#Colorado{}
-#Connecticut{}
-#Delaware{}
-#Florida{}
-#Georgia{}
-#Hawaii{
+#AZ{}
+#CA{}
+#CO{}
+#CT{}
+#DE{}
+#FL{}
+#GA{}
+#HI{
 }
-#Idaho{}
-#Illinois{}
-#Indiana{}
-#Iowa{}
-#Kansas{}
-#Kentucky{}
-#Louisiana{}
-#Maine{}
-#Maryland{}
-#Massachusetts{}
-#Michigan{}
-#Minnesota{}
-#Mississippi{}
-#Missouri{}
-#Montana{}
-#Nebraska{}
-#Nevada{}
-#New_Hampshire{}
-#New_Jersey{}
-#North_Carolina{}
-#North_Dakota{}
-#Ohio{}
-#Oklahoma{}
-#Oregon{}
-#Pennsylvania{}
-#Rhode_Island{}
-#South_Carolina{}
-#South_Dakota{}
-#Tennessee{}
-#Texas{}
-#Utah{}
-#Vermont{}
-#Virginia{}
-#Washington{}
-#West_Virginia{}
-#Wisconsin{}
-#Wyoming{}
+#ID{}
+#IL{}
+#IN{}
+#IA{}
+#KS{}
+#KY{}
+#LA{}
+#ME{}
+#MD{}
+#MA{}
+#MI{}
+#MN{}
+#MS{}
+#MO{}
+#MT{}
+#NE{}
+#NV{}
+#NH{}
+#NJ{}
+#NC{}
+#ND{}
+#OH{}
+#OK{}
+#OR{}
+#PA{}
+#RI{}
+#SC{}
+#SD{}
+#TN{}
+#TX{}
+#UT{}
+#VT{}
+#VA{}
+#WA{}
+#WV{}
+#WI{}
+#WY{}
