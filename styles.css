@@ -1,5 +1,74 @@
-#wrapper{}
 
-body{
+html, body{
 	background-color: #262931;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
 }
+
+.container{
+	border: 3px solid red;
+	width: 90%;
+	height: 90%;
+	margin: 0 auto;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 10px;
+	display: grid;
+	grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+}
+.container div {
+	margin: 2px;
+	border: 2px solid green;
+}
+#Alabama{
+
+}
+#Alaska{}
+#Arizona{}
+#California{}
+#Colorado{}
+#Connecticut{}
+#Delaware{}
+#Florida{}
+#Georgia{}
+#Hawaii{}
+#Idaho{}
+#Illinois{}
+#Indiana{}
+#Iowa{}
+#Kansas{}
+#Kentucky{}
+#Louisiana{}
+#Maine{}
+#Maryland{}
+#Massachusetts{}
+#Michigan{}
+#Minnesota{}
+#Mississippi{}
+#Missouri{}
+#Montana{}
+#Nebraska{}
+#Nevada{}
+#New_Hampshire{}
+#New_Jersey{}
+#North_Carolina{}
+#North_Dakota{}
+#Ohio{}
+#Oklahoma{}
+#Oregon{}
+#Pennsylvania{}
+#Rhode_Island{}
+#South_Carolina{}
+#South_Dakota{}
+#Tennessee{}
+#Texas{}
+#Utah{}
+#Vermont{}
+#Virginia{}
+#Washington{}
+#West_Virginia{}
+#Wisconsin{}
+#Wyoming{}
