@@ -1,11 +1,14 @@
 $(document).ready(function(){
-  //Cycle through all the state elements
+
+  //Cycle through all   the state elements
   for(var i = 0; i < $('.container *').length; i++){
     var state = $('.container').children().eq(i);
     //Put state name in element
     state.html("<span>" + state.attr('id') + "</span>");
   }
   adjustSize();
+
+  //Crreate grid layout with masonry
   $(".container").masonry({
     itemSelector: '.grid-item',
     columnWidth: '.grid-sizer',
@@ -13,6 +16,7 @@ $(document).ready(function(){
   });
 
 });
+//Function for Get request
 function httpGet(theUrl)
 {
     var xmlHttp = new XMLHttpRequest();
@@ -20,7 +24,7 @@ function httpGet(theUrl)
     xmlHttp.send( null );
     return xmlHttp.responseText;
 }
-
+//Adjusts size of states cells based on total cases
 function adjustSize(){
     //Grab our COVID data and parse it
     var stateData = JSON.parse(httpGet("https://covidtracking.com/api/states"));
@@ -39,7 +43,10 @@ function adjustSize(){
                  var height = area / 5;
                  state.css('width', width + '%');
                  if(height > 50){
-                    state.css('height', height + 'px')
+                    state.css('height', height + 'px');
+                 }
+                 if((state.width() / 6) > 15){
+                    state.children().eq(0).css('font-size', (state.width() / 6) + 'px');
                  }
             }
         }

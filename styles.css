@@ -22,7 +22,9 @@ html, body{
 	float: left;
 	border: 1px solid black;
 	background-color: #357d4e;
-	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 9.87%;
 	height: 75px;
 }
@@ -33,7 +35,7 @@ html, body{
   	font-weight: 500;
   	color: white;
   	text-transform: uppercase;
-  	line-height: 55px;
+
 }
 #AL{
 }
