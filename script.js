@@ -1,10 +1,12 @@
 $(document).ready(function(){
 
   //Cycle through all   the state elements
-  for(var i = 0; i < $('.container *').length; i++){
+  for(var i = 1; i < $('.container *').length; i++){
     var state = $('.container').children().eq(i);
     //Put state name in element
     state.html("<span>" + state.attr('id') + "</span>");
+    //Might as well add the tooltips here as well
+    state.addClass('tooltip');
   }
   adjustSize();
   adjustColor();
@@ -14,7 +16,15 @@ $(document).ready(function(){
     columnWidth: '.grid-sizer',
     percentPosition: true,
   });
-
+  //Tooltip
+    $('.tooltip').tooltipster({
+        offset: [70, 13],
+        plugins: ['follower'],
+        animationDuration: 0,
+        arrow: false,
+        delayTouch: 0,
+        theme: 'tooltipster-borderless'
+    });
 });
 //Function for Get request
 function httpGet(theUrl)
@@ -51,7 +61,11 @@ function adjustSize(){
                  if((state.width() / 6) > 15){
                     state.children().eq(0).css('font-size', (state.width() / 6) + 'px');
                  }
-            }
+                 //Lets also just set the tooltips here as well cause im lazy
+                 var stateHash = JSON.parse(httpGet(""));
+                 state.attr('data-tooltip-content', '#tooltip-content-' + state.attr('id'));
+                 $('body').append('<div class="tooltip-template"> <span id="tooltip-content-' + state.attr('id') + '"> </span> </div>');            
+             }
         }
     }
     

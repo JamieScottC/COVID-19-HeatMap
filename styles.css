@@ -37,7 +37,13 @@ html, body{
   	text-transform: uppercase;
 
 }
-#AL{
+.tooltip-template{
+	display: none;
+}
+.tooltip-template span{
+
+}
+/*#AL{
 }
 #AK{
 }
@@ -86,4 +92,4 @@ html, body{
 #WA{}
 #WV{}
 #WI{}
-#WY{}
+#WY{}*/
