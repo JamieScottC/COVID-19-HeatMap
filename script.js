@@ -18,7 +18,7 @@ $(document).ready(function(){
   });
   //Tooltip
     $('.tooltip').tooltipster({
-        offset: [70, 13],
+        offset: [70, 0],
         plugins: ['follower'],
         animationDuration: 0,
         arrow: false,
@@ -62,9 +62,11 @@ function adjustSize(){
                     state.children().eq(0).css('font-size', (state.width() / 6) + 'px');
                  }
                  //Lets also just set the tooltips here as well cause im lazy
-                 var stateHash = JSON.parse(httpGet(""));
+                 var stateHash = JSON.parse(httpGet("https://gist.githubusercontent.com/mshafrir/2646763/raw/8b0dbb93521f5d6889502305335104218454c2bf/states_hash.json"));
+                 var stateName = stateHash[state.attr('id')];
                  state.attr('data-tooltip-content', '#tooltip-content-' + state.attr('id'));
-                 $('body').append('<div class="tooltip-template"> <span id="tooltip-content-' + state.attr('id') + '"> </span> </div>');            
+                 $('body').append('<div class="tooltip-template"> <p1 id="tooltip-content-' + state.attr('id') + '"> <strong>' + stateName + '</strong> <br> Total Cases: ' + stateData[j]['positive'] + ' <br> Total Hospitilizations: ' + stateData[j]['hospitalizedCumulative'] + 
+                    ' <br> Total Deaths: ' + stateData[j]['death'] + ' <br> Daily Cases: ' + stateData[j]['positiveIncrease'] + ' <br> Data Grade: ' + stateData[j]['dataQualityGrade'] + ' <br> </p1> </div>');            
              }
         }
     }

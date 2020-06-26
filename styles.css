@@ -31,18 +31,23 @@ html, body{
 
 .container span{
 	display: inline-block;
-  	font-family: 'Montserrat', sans-serif;
   	font-weight: 500;
   	color: black;
   	text-transform: uppercase;
-
+  	font-family: 'Montserrat', sans-serif;
+}
+p1{
+	font-family: 'Montserrat', sans-serif;
+}
+strong{
+	font-size: 30px;
+	font-weight: 10000;
 }
 .tooltip-template{
 	display: none;
 }
-.tooltip-template span{
 
-}
+
 /*#AL{
 }
 #AK{
