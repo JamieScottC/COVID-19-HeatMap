@@ -8,5 +8,7 @@ Best to worst: Green -> Yellow -> Orange -> Red.
 <a href="https://jquery.com/">jQuery </a> - Javascript library <br />
 <a href="https://masonry.desandro.com/">Masonry </a> - Cascading grid layout library for JS <br />
 <a href="https://iamceege.github.io/tooltipster/">Tooltipster </a> - jQuery tooltip plugin
+# License
+This project is licensed under the MIT License - see the <a href="https://github.com/JamieScottC/COVID-19-HeatMap/blob/master/LICENSE">LICENSE.md</a> file for details
 # Acknowledgments
 Based on the <a href="https://finviz.com/map.ashx">S&P 500 Heat Map</a>
