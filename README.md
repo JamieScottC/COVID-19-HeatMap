@@ -11,4 +11,4 @@ Best to worst: Green -> Yellow -> Orange -> Red.
 # License
 This project is licensed under the MIT License - see the <a href="https://github.com/JamieScottC/COVID-19-HeatMap/blob/master/LICENSE">LICENSE.md</a> file for details
 # Acknowledgments
-Based on the <a href="https://finviz.com/map.ashx">S&P 500 Heat Map</a>
+Inspired by the <a href="https://finviz.com/map.ashx">S&P 500 Heat Map</a>
