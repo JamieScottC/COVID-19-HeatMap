@@ -11,11 +11,17 @@ html, body{
 span{
 	font-family: 'Montserrat', sans-serif;
 }
-.title{
+.nav-wrapper{
+
+
+}
+.nav-wrapper strong{
+	font-family: 'Montserrat', sans-serif;
 	font-weight: bold;
 	color: #e77500;
 	font-size: 40px;
 }
+
 
 .container{
 	/*border: 3px solid red;*/
